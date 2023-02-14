@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metaverse</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wallpaper">
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#metaverse">Metaverse</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#" class="settings">Settings</a></li>
+                <li><a href="#" class="feedback">Feedback</a></li>
+            </ul>
+            <div class="navigation">
+                <div class="menuToggle"></div>
+            </div>
+        </div>
+    </nav>
+    <section id="home">
+        <img src="img/thumb1.jpg" alt="metaverse" >
+        <div class="text">
+            <h2>METAVERSE WEBSITE</h2>
+            <p>A website design developed under the Metaverse project.</p>
+            <p>Made by Taha Toklucu</p>
+            <button>Let's Start!</button>
+        </div>
+    </section>
+    <div class="arrows">
+        <img src="img/whitearrow.png" alt="">
+        <img src="img/whitearrow.png" alt="">
+        <img src="img/whitearrow.png" alt="">
+    </div>
+</div>
+    <section id="metaverse">
+        <h1 class="middle-text shadow">WELCOME TO METAVERSE!</h1>
+    </section>
+    <section id="history">
+        <h1 class="headings inside">HISTORY</h1>
+        <div class="row">
+            <div class="box">
+                <h1 class="headings">Metaverse History</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum officiis illum repellendus quisquam, velit natus. Esse ipsa facere assumenda, similique hic eligendi, magnam dolore odit veritatis delectus distinctio laboriosam et!</p>
+            </div>
+            <div class="box">
+                <h1 class="headings">From Past To Present</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum officiis illum repellendus quisquam, velit natus. Esse ipsa facere assumenda, similique hic eligendi, magnam dolore odit veritatis delectus distinctio laboriosam et!</p>
+            </div>
+            <div class="box">
+                <h1 class="headings">Metaverse Universe</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum officiis illum repellendus quisquam, velit natus. Esse ipsa facere assumenda, similique hic eligendi, magnam dolore odit veritatis delectus distinctio laboriosam et!</p>
+            </div>
+    </section>
+
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let navigation = document.querySelector('.navigation');
+        let settings = document.querySelector('.settings');
+        let feedback = document.querySelector('.feedback');
+        menuToggle.onclick = function(){
+            navigation.classList.toggle('active');
+        }
+        settings.onclick = function(){
+            navigation.classList.toggle('active');
+        }
+        feedback.onclick = function(){
+            navigation.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+
+.wallpaper{
+    min-height: 100vh;
+    background-image: url(img/metaverse-background.jpg);
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    justify-content: center;
+}
+
+.navigation.active{
+    width: 300px;
+    height: 400px;
+    transition: width 0.5s, height 0.5s;
+    transition-delay: 0s, 0.75s;
+}
+
+nav .navbar{
+    text-align: center;
+    justify-content: center;
+}
+
+nav .navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 15px 0px;
+}
+
+nav .navbar ul li{
+    margin: 5px 20px;
+    font-size: 20px;
+}
+
+nav .navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 5px;
+    transition: color 0.5s ease;
+    text-shadow: 1px 1px 4px #000;
+}
+
+nav .navbar ul li a:hover{
+    color: rgb(255, 209, 220);
+    transition: color 0.5s ease;
+}
+
+/* home */
+
+#home{
+    display: flex;
+}
+
+#home img{
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin: 180px 75px;
+    box-shadow: 5px 5px 40px rgba(0,0,0,0.6),
+    5px 5px 25px rgba(0,0,0,0.6),
+    inset 5px 5px 10px rgba(0,0,0,0.9);
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 15px;
+    font-size: 30px;
+    margin-left: 25px;
+    margin-top: 190px;
+    color: #fff;
+}
+
+.text h2{
+    margin-bottom: 20px;
+    color: rgb(255, 209, 220);
+    text-shadow: 1px 1px 4px #000;
+}
+
+.text p{
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px #000;
+}
+
+.text button{
+    width: 30%;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    outline: none;
+    transition: .6s ease;
+}
+
+.text button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+}
+
+/* menuToggle */
+
+.navigation{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: rgb(211, 124, 192);
+    border-radius: 10px;
+    box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    transition: height 0.5s, width 0.5s;
+    transition-delay: 0s, 0.75s;
+    overflow: hidden;
+}
+
+.navigation .menuToggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation .menuToggle::before{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #555;
+    transform: translateY(-10px);
+    box-shadow: 0 10px #555;
+    transition: 0.5s;
+}
+
+.navigation .menuToggle::after{
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background: #555;
+    transform: translateY(10px);
+    transition: 0.5s;
+}
+
+.navigation.active .menuToggle::before{
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 #555;
+}
+
+.navigation.active .menuToggle::after{
+    transform: translateY(0px) rotate(-45deg);
+}
+
+/* arrows */
+
+.arrows{
+    display: flex;
+}
+
+.arrows img{
+    width: 200px;
+    margin-top: -70px;
+    margin-left: 17%;
+    cursor: pointer;
+    box-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.arrows img:hover{
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+}
+
+/* page 2 */
+
+#metaverse{
+    height: 100vh;
+    background-image: url(img/d.png);
+    background-size: cover;
+}
+
+.middle-text{
+    position: relative;
+    top: 50%;
+    font-size: 7.8rem;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 6px 2px 5px #000;
+}
+
+/* page 3 */
+
+.headings{
+    font-family: century;
+    font-size: 50px;
+    text-align: center;
+    margin: 55px 0px;
+    width: 100%;
+}
+
+#history{
+    background-image: url(img/h.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    color: #333;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    border: 1px solid #333;
+    margin: 60px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, #be2cd1 50%, #fff 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+
+.box:hover{
+    background-position: left bottom;
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 20px #be2cd1;
+}
+
+.inside{
+    padding: 50px;
+}
+
+/* responsive */
+
+@media screen and (max-width:800px){
+
+    #home{
+        background-size: cover;
+    }
+
+    #home img{
+        display: none;
+    }
+
+    .arrows img{
+        width: 150px;
+        margin-top: 40px;
+        margin-left: 11%;
+    }
+
+    #metaverse{
+        background-size: cover;
+        width: 100%;
+    }
+
+    .middle-text{
+        font-size: 6rem;
+        top: 35%;
+    }
+
+}
